@@ -1,0 +1,103 @@
+/* BEGIN GENERAL CSS */
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	background-color: brown;
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: column;
+	background-color: pink;
+	height: 100%;
+}
+
+.wrapper .new-row {
+}
+/* END GENERAL CSS */
+
+/* BEGIN HEADER */
+.wrapper .new-row.header {
+	flex: 0 1 auto;
+	margin: 0;
+	text-align: center;
+	background-color: red;
+	height: 100px;
+}
+/* END HEADER */
+
+/* BEGIN CONTENT */
+.wrapper .new-row.content {
+	flex: 1 1 auto;
+	text-align: center;
+	background-color: green;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.wrapper .new-row.content .page {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.wrapper .new-row.content .page#nav-bar {
+	top: 13%;
+	left: 0;
+	z-index: 99999;
+}
+
+.wrapper .new-row.content .page#nav-bar a {
+	color: white;
+	background-color: black;
+	padding: 5px;
+}
+
+.wrapper .new-row.content .page#page1 {
+	top: 0%;
+	left: 0;
+	background-color: gray;
+}
+
+.wrapper .new-row.content .page#page1 h1 {
+	color: white;
+}
+
+.wrapper .new-row.content .page#page2 {
+	top: 100%;
+	left: 0;
+	background-color: yellow;
+}
+
+.wrapper .new-row.content .page#page2 h1 {
+	color: black;
+}
+
+.wrapper .new-row.content .page#page3 {
+	top: 100%;
+	left: 0;
+	background-color: purple;
+}
+
+.wrapper .new-row.content .page#page3 h1 {
+	color: white;
+}
+/* END CONTENT */
+
+/* BEGIN FOOTER */
+.wrapper .new-row.footer {
+	flex: 0 0 40px;
+	text-align: center;
+	background-color: blue;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+/* END FOOTER */
